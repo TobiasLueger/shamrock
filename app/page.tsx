@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { draftMode } from 'next/headers'
 
 import Date from './date'
@@ -8,13 +9,11 @@ import MoreStories from './more-stories'
 
 import { getAllPosts } from '@/lib/api'
 import { CMS_NAME, CMS_URL } from '@/lib/constants'
+import logo from "../app/images/shamrock.png";
 
 function Intro() {
   return (
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        Blog.
-      </h1>
       <h2 className="text-center md:text-left text-lg mt-5 md:pl-8">
         A statically generated blog example using{' '}
         <a
@@ -84,7 +83,6 @@ export default async function Page() {
 
   return (
     <div className="container mx-auto px-5">
-      <Intro />
       {heroPost && (
         <HeroPost
           title={heroPost.title}
