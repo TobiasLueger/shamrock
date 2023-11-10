@@ -4,8 +4,8 @@ import { EXAMPLE_PATH, CMS_NAME } from '@/lib/constants'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 export const metadata = {
-  title: `Next.js and ${CMS_NAME} Example`,
-  description: `This is a blog built with Next.js and ${CMS_NAME}.`,
+  title: `Shamrock Irish Pub Rheinbach`,
+  description: `Unsere Shamrock Webseite. Hier finden sie alle Information um unser schönes Irisch Pub in Rheinbach.`,
 }
 
 const inter = Inter({
