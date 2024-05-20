@@ -5,29 +5,8 @@ import Link from 'next/link';
 import Button from '../Button/Button';
 
 const Stage = () => {
-    const [show, setShow] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
-    const controlNavbar = () => {
-        if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
-          setShow(false); 
-        } else { // if scroll up show the navbar
-          setShow(true);  
-        }
-    
-        // remember current page location to use in the next move
-        setLastScrollY(window.scrollY); 
-      };
-    
-      useEffect(() => {
-        window.addEventListener('scroll', controlNavbar);
-    
-        // cleanup function
-        return () => {
-           window.removeEventListener('scroll', controlNavbar);
-        };
-      }, [lastScrollY]);
     return (
-        <div className="bg-primary pt-24 flex flex-col items-center">
+        <div className="bg-primary py-24 flex flex-col items-center rounded-[30px] overflow-hidden">
             <div className='w-[356px] text-center flex flex-col gap-8 items-center'>
                 <h1>Shamrock Irish Pub Rheinbach</h1>
                 <p>Dein Irish Pub in der schönen Innenstadt von Rheinbach. Komm gerne vorbei und genieße mit uns deinen Abend.</p>
