@@ -35,7 +35,7 @@ const Navigation = () => {
                     alt="Das Logo von Shamrock"
                     width={560}
                     height={560}
-                    className='max-w-[60px]'
+                    className='max-w-[60px] transition-all hover:animate-jiggle'
                     priority
                     />
             </Link>

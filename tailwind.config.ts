@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        jiggle: {
+          '0%, 100%': { transform: 'rotate(0deg) scale(1)' },
+          '50%': { transform: 'rotate(6deg) scale(1.2)' },
+        }
+      },
+      animation: {
+        'jiggle': 'jiggle .4s ease-in-out both',
+      }
     },
     colors: {
       primary: "var(--primary)",
