@@ -10,7 +10,7 @@ const Stage = () => {
                 <h1>Shamrock Irish Pub Rheinbach</h1>
                 <p>Dein Irish Pub in der schönen Innenstadt von Rheinbach. Komm gerne vorbei und genieße mit uns deinen Abend.</p>
                 <Button type="primary" href="#" className="w-fit">Aktuelles</Button>
-                <Image src='/img/beer2.png' alt={''} width={292} height={302} className='absolute -top-1/4 -left-[110%] scale-75' />
+                <Image src='/img/beer2.png' alt={'beer'} width={292} height={302} className='absolute -top-1/4 -left-[110%] scale-75' />
                 <Image src='/img/beer5.png' alt={''} width={252} height={322} className='absolute -top-1/4 -right-[110%] scale-75' />
                 <Image src='/img/beer3.png' alt={''} width={206} height={264} className='absolute top-1/2 -left-[85%] scale-75' />
                 <Image src='/img/beer1.png' alt={''} width={166} height={296} className='absolute top-[40%] -right-full scale-75' />
