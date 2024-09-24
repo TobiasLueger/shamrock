@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Shamrock Irish Pub - Next.js App Documentation
 
-## Getting Started
+This documentation describes the structure and functionalities of the Shamrock Irish Pub website, built using Next.js.
 
-First, run the development server:
+### Inputs
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* The app utilizes CSS variables for styling, defining core colors and fonts. These can be adjusted in the `src/app/globals.css` file.
+* Storybook is used for component development and documentation, with a focus on accessibility. Stories are defined in files with the `.stories.tsx` extension.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Outputs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* The app renders a single page with a hero section showcasing the pub's information, and a following section with information about the team. 
+* Navigation is implemented as a fixed element on the top of the page, and hides on scrolling down, revealing itself again on scrolling up.
+* The app is responsive and designed using Tailwind CSS.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Usage
 
-## Learn More
+This application serves as a simple website for the Shamrock Irish Pub. It provides basic information about the pub, its team, and current events. Users can navigate through the different sections of the website via the fixed navigation bar.
 
-To learn more about Next.js, take a look at the following resources:
+**Storybook**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Storybook is a powerful tool that enables developers to build and test components in isolation. It also serves as a documentation tool by showcasing each component's functionalities and available props.
